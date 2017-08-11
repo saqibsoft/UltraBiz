@@ -1,0 +1,218 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B40A92FF-4AD3-413B-AD93-FB1DBD056D86}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Accounts</RootNamespace>
+    <AssemblyName>Accounts</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Balance Sheet Setting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Balance Sheet Setting.Designer.cs">
+      <DependentUpon>Balance Sheet Setting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bank Cheque Issuing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bank Cheque Issuing.Designer.cs">
+      <DependentUpon>Bank Cheque Issuing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bank Cheque Reconcilation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bank Cheque Reconcilation.Designer.cs">
+      <DependentUpon>Bank Cheque Reconcilation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bank Transaction Voucher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bank Transaction Voucher.Designer.cs">
+      <DependentUpon>Bank Transaction Voucher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cash Deposit in Bank.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cash Deposit in Bank.Designer.cs">
+      <DependentUpon>Cash Deposit in Bank.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cash Payment Voucher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cash Payment Voucher.Designer.cs">
+      <DependentUpon>Cash Payment Voucher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cash Recieving Voucher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cash Recieving Voucher.Designer.cs">
+      <DependentUpon>Cash Recieving Voucher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cheque Deposit in Bank.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cheque Deposit in Bank.Designer.cs">
+      <DependentUpon>Cheque Deposit in Bank.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Deposit Reconcilation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Deposit Reconcilation.Designer.cs">
+      <DependentUpon>Deposit Reconcilation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Expense Sheet Setting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Expense Sheet Setting.Designer.cs">
+      <DependentUpon>Expense Sheet Setting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Journal Voucher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Journal Voucher.Designer.cs">
+      <DependentUpon>Journal Voucher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manage Accounts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manage Accounts.Designer.cs">
+      <DependentUpon>Manage Accounts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Opening Balances for Accounts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Opening Balances for Accounts.Designer.cs">
+      <DependentUpon>Opening Balances for Accounts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Profit Lose Statement Setting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Profit Lose Statement Setting.Designer.cs">
+      <DependentUpon>Profit Lose Statement Setting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Recievable Payable Parties Setting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Recievable Payable Parties Setting.Designer.cs">
+      <DependentUpon>Recievable Payable Parties Setting.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Balance Sheet Setting.resx">
+      <DependentUpon>Balance Sheet Setting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bank Cheque Issuing.resx">
+      <DependentUpon>Bank Cheque Issuing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bank Cheque Reconcilation.resx">
+      <DependentUpon>Bank Cheque Reconcilation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bank Transaction Voucher.resx">
+      <DependentUpon>Bank Transaction Voucher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cash Deposit in Bank.resx">
+      <DependentUpon>Cash Deposit in Bank.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cash Payment Voucher.resx">
+      <DependentUpon>Cash Payment Voucher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cash Recieving Voucher.resx">
+      <DependentUpon>Cash Recieving Voucher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cheque Deposit in Bank.resx">
+      <DependentUpon>Cheque Deposit in Bank.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Deposit Reconcilation.resx">
+      <DependentUpon>Deposit Reconcilation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Expense Sheet Setting.resx">
+      <DependentUpon>Expense Sheet Setting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Journal Voucher.resx">
+      <DependentUpon>Journal Voucher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manage Accounts.resx">
+      <DependentUpon>Manage Accounts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Opening Balances for Accounts.resx">
+      <DependentUpon>Opening Balances for Accounts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Profit Lose Statement Setting.resx">
+      <DependentUpon>Profit Lose Statement Setting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Recievable Payable Parties Setting.resx">
+      <DependentUpon>Recievable Payable Parties Setting.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\form.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

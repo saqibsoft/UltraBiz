@@ -1,0 +1,270 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{012AA342-D525-4B35-9368-774AC7789F69}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Defination</RootNamespace>
+    <AssemblyName>Invoicing</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FrmCompanyDiscountCustomerWise.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCompanyDiscountCustomerWise.designer.cs">
+      <DependentUpon>FrmCompanyDiscountCustomerWise.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmExceedInvoice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmExceedInvoice.designer.cs">
+      <DependentUpon>FrmExceedInvoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Production.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Production.designer.cs">
+      <DependentUpon>Production.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PurchaseSizewise.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PurchaseSizewise.designer.cs">
+      <DependentUpon>PurchaseSizewise.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PurchaseInvoice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PurchaseInvoice.designer.cs">
+      <DependentUpon>PurchaseInvoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PurchaseOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PurchaseOrder.designer.cs">
+      <DependentUpon>PurchaseOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PurchaseReturnInvoice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PurchaseReturnInvoice.designer.cs">
+      <DependentUpon>PurchaseReturnInvoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sale Copy of Purchase Invoice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sale Copy of Purchase Invoice.designer.cs">
+      <DependentUpon>Sale Copy of Purchase Invoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sale Invoice %28Counter%29.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sale Invoice %28Counter%29.designer.cs">
+      <DependentUpon>Sale Invoice %28Counter%29.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sale Invoice %28Detailed%29.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sale Invoice %28Detailed%29.designer.cs">
+      <DependentUpon>Sale Invoice %28Detailed%29.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sale Invoice %28Short%29.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sale Invoice %28Short%29.designer.cs">
+      <DependentUpon>Sale Invoice %28Short%29.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sale Invoice %28Size Wise%29.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sale Invoice %28Size Wise%29.designer.cs">
+      <DependentUpon>Sale Invoice %28Size Wise%29.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sale Order.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sale Order.designer.cs">
+      <DependentUpon>Sale Order.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sale Recovery %28Invoice Wise%29.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sale Recovery %28Invoice Wise%29.designer.cs">
+      <DependentUpon>Sale Recovery %28Invoice Wise%29.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sale Return.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sale Return.designer.cs">
+      <DependentUpon>Sale Return.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sales Recovery Invoice %28Custome Wise%29.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sales Recovery Invoice %28Custome Wise%29.designer.cs">
+      <DependentUpon>Sales Recovery Invoice %28Custome Wise%29.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StockIssue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StockIssue.designer.cs">
+      <DependentUpon>StockIssue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StockReturn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StockReturn.designer.cs">
+      <DependentUpon>StockReturn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Wastage Invoice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Wastage Invoice.designer.cs">
+      <DependentUpon>Wastage Invoice.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FrmCompanyDiscountCustomerWise.resx">
+      <DependentUpon>FrmCompanyDiscountCustomerWise.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmExceedInvoice.resx">
+      <DependentUpon>FrmExceedInvoice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Production.resx">
+      <DependentUpon>Production.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="PurchaseSizewise.resx">
+      <DependentUpon>PurchaseSizewise.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PurchaseInvoice.resx">
+      <DependentUpon>PurchaseInvoice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PurchaseOrder.resx">
+      <DependentUpon>PurchaseOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PurchaseReturnInvoice.resx">
+      <DependentUpon>PurchaseReturnInvoice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sale Copy of Purchase Invoice.resx">
+      <DependentUpon>Sale Copy of Purchase Invoice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sale Invoice %28Counter%29.resx">
+      <DependentUpon>Sale Invoice %28Counter%29.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sale Invoice %28Detailed%29.resx">
+      <DependentUpon>Sale Invoice %28Detailed%29.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sale Invoice %28Short%29.resx">
+      <DependentUpon>Sale Invoice %28Short%29.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sale Invoice %28Size Wise%29.resx">
+      <DependentUpon>Sale Invoice %28Size Wise%29.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sale Order.resx">
+      <DependentUpon>Sale Order.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sale Recovery %28Invoice Wise%29.resx">
+      <DependentUpon>Sale Recovery %28Invoice Wise%29.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sale Return.resx">
+      <DependentUpon>Sale Return.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales Recovery Invoice %28Custome Wise%29.resx">
+      <DependentUpon>Sales Recovery Invoice %28Custome Wise%29.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockIssue.resx">
+      <DependentUpon>StockIssue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockReturn.resx">
+      <DependentUpon>StockReturn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wastage Invoice.resx">
+      <DependentUpon>Wastage Invoice.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\form.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{eeb9c01d-d7fb-4239-ab0a-745b6dc7947c}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Objects\Objects.csproj">
+      <Project>{389afc19-4e00-43ae-9f5e-30fef94c72a5}</Project>
+      <Name>Objects</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Search\Search.csproj">
+      <Project>{2bcf6fa2-c044-499b-8336-eab26773465e}</Project>
+      <Name>Search</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

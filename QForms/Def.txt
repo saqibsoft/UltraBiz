@@ -1,0 +1,5 @@
+Assign sector to offices,
+Define Formulae,
+Trade Offers,
+company Discount,
+opening Stock

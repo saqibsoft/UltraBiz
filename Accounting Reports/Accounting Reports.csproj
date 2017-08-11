@@ -1,0 +1,254 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B0EF4C5A-B003-4CAF-A4CB-589F090E34C6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Accounting_Reports</RootNamespace>
+    <AssemblyName>Accounting Reports</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Accounts Balances.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Accounts Balances.Designer.cs">
+      <DependentUpon>Accounts Balances.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Accounts Ledger.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Accounts Ledger.Designer.cs">
+      <DependentUpon>Accounts Ledger.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Accounts List.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Accounts List.Designer.cs">
+      <DependentUpon>Accounts List.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Accounts Payable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Accounts Payable.Designer.cs">
+      <DependentUpon>Accounts Payable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Accounts Receivable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Accounts Receivable.Designer.cs">
+      <DependentUpon>Accounts Receivable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Balance Sheet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Balance Sheet.Designer.cs">
+      <DependentUpon>Balance Sheet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bank Journal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bank Journal.Designer.cs">
+      <DependentUpon>Bank Journal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bank Statement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bank Statement.Designer.cs">
+      <DependentUpon>Bank Statement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bounced Cheques.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bounced Cheques.Designer.cs">
+      <DependentUpon>Bounced Cheques.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cash Book.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cash Book.Designer.cs">
+      <DependentUpon>Cash Book.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Day Book.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Day Book.Designer.cs">
+      <DependentUpon>Day Book.cs</DependentUpon>
+    </Compile>
+    <Compile Include="G_L Journal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="G_L Journal.Designer.cs">
+      <DependentUpon>G_L Journal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lost Cheques.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lost Cheques.Designer.cs">
+      <DependentUpon>Lost Cheques.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Monthly Expense Chart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Monthly Expense Chart.Designer.cs">
+      <DependentUpon>Monthly Expense Chart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Opening Balances.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Opening Balances.Designer.cs">
+      <DependentUpon>Opening Balances.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Parties Ledger.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Parties Ledger.Designer.cs">
+      <DependentUpon>Parties Ledger.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Profit and Loss Statement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Profit and Loss Statement.Designer.cs">
+      <DependentUpon>Profit and Loss Statement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Trial Balance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Trial Balance.Designer.cs">
+      <DependentUpon>Trial Balance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Uncleared Cheques.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Uncleared Cheques.Designer.cs">
+      <DependentUpon>Uncleared Cheques.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Accounts Balances.resx">
+      <DependentUpon>Accounts Balances.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Accounts Ledger.resx">
+      <DependentUpon>Accounts Ledger.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Accounts List.resx">
+      <DependentUpon>Accounts List.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Accounts Payable.resx">
+      <DependentUpon>Accounts Payable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Accounts Receivable.resx">
+      <DependentUpon>Accounts Receivable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Balance Sheet.resx">
+      <DependentUpon>Balance Sheet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bank Journal.resx">
+      <DependentUpon>Bank Journal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bank Statement.resx">
+      <DependentUpon>Bank Statement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bounced Cheques.resx">
+      <DependentUpon>Bounced Cheques.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cash Book.resx">
+      <DependentUpon>Cash Book.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Day Book.resx">
+      <DependentUpon>Day Book.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="G_L Journal.resx">
+      <DependentUpon>G_L Journal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lost Cheques.resx">
+      <DependentUpon>Lost Cheques.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Monthly Expense Chart.resx">
+      <DependentUpon>Monthly Expense Chart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Opening Balances.resx">
+      <DependentUpon>Opening Balances.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Parties Ledger.resx">
+      <DependentUpon>Parties Ledger.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Profit and Loss Statement.resx">
+      <DependentUpon>Profit and Loss Statement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Trial Balance.resx">
+      <DependentUpon>Trial Balance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Uncleared Cheques.resx">
+      <DependentUpon>Uncleared Cheques.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\form.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

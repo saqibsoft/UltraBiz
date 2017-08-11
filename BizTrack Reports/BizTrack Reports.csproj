@@ -1,0 +1,281 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{636B9A1C-8E61-48A7-A914-6062F630C464}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BizTrack_Reports</RootNamespace>
+    <AssemblyName>BizTrack Reports</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Barcode Printing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Barcode Printing.Designer.cs">
+      <DependentUpon>Barcode Printing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Company Wise Product List.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Company Wise Product List.Designer.cs">
+      <DependentUpon>Company Wise Product List.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Current Stock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Current Stock.Designer.cs">
+      <DependentUpon>Current Stock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Opening Stock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Opening Stock.Designer.cs">
+      <DependentUpon>Opening Stock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Party List %28detailed%29.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Party List %28detailed%29.Designer.cs">
+      <DependentUpon>Party List %28detailed%29.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Party List Summarized.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Party List Summarized.Designer.cs">
+      <DependentUpon>Party List Summarized.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Product Price List.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Product Price List.Designer.cs">
+      <DependentUpon>Product Price List.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Product Purchase Ledger.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Product Purchase Ledger.Designer.cs">
+      <DependentUpon>Product Purchase Ledger.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Product Purchase Return Ledger.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Product Purchase Return Ledger.Designer.cs">
+      <DependentUpon>Product Purchase Return Ledger.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Product Wise Purchase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Product Wise Purchase.Designer.cs">
+      <DependentUpon>Product Wise Purchase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Purchase Register %28date Wise%29.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase Register %28date Wise%29.Designer.cs">
+      <DependentUpon>Purchase Register %28date Wise%29.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase Register %28Invoice Wise%29.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase Register %28Invoice Wise%29.Designer.cs">
+      <DependentUpon>Purchase Register %28Invoice Wise%29.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase Return Register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase Return Register.Designer.cs">
+      <DependentUpon>Purchase Return Register.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase Return Summary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase Return Summary.Designer.cs">
+      <DependentUpon>Purchase Return Summary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase Summary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase Summary.Designer.cs">
+      <DependentUpon>Purchase Summary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Salesmen Current Stock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Salesmen Current Stock.Designer.cs">
+      <DependentUpon>Salesmen Current Stock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sectors List %28Salesmen Wise%29.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sectors List %28Salesmen Wise%29.Designer.cs">
+      <DependentUpon>Sectors List %28Salesmen Wise%29.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sectors List.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sectors List.Designer.cs">
+      <DependentUpon>Sectors List.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Stock Count Sheet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stock Count Sheet.Designer.cs">
+      <DependentUpon>Stock Count Sheet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Stock Issue Register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stock Issue Register.Designer.cs">
+      <DependentUpon>Stock Issue Register.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Stock Return Register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stock Return Register.Designer.cs">
+      <DependentUpon>Stock Return Register.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Towns List.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Towns List.Designer.cs">
+      <DependentUpon>Towns List.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Barcode Printing.resx">
+      <DependentUpon>Barcode Printing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Company Wise Product List.resx">
+      <DependentUpon>Company Wise Product List.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Current Stock.resx">
+      <DependentUpon>Current Stock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Opening Stock.resx">
+      <DependentUpon>Opening Stock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Party List %28detailed%29.resx">
+      <DependentUpon>Party List %28detailed%29.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Party List Summarized.resx">
+      <DependentUpon>Party List Summarized.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Product Price List.resx">
+      <DependentUpon>Product Price List.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Product Purchase Ledger.resx">
+      <DependentUpon>Product Purchase Ledger.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Product Purchase Return Ledger.resx">
+      <DependentUpon>Product Purchase Return Ledger.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Product Wise Purchase.resx">
+      <DependentUpon>Product Wise Purchase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Purchase Register %28date Wise%29.resx">
+      <DependentUpon>Purchase Register %28date Wise%29.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase Register %28Invoice Wise%29.resx">
+      <DependentUpon>Purchase Register %28Invoice Wise%29.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase Return Register.resx">
+      <DependentUpon>Purchase Return Register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase Return Summary.resx">
+      <DependentUpon>Purchase Return Summary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase Summary.resx">
+      <DependentUpon>Purchase Summary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Salesmen Current Stock.resx">
+      <DependentUpon>Salesmen Current Stock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sectors List %28Salesmen Wise%29.resx">
+      <DependentUpon>Sectors List %28Salesmen Wise%29.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sectors List.resx">
+      <DependentUpon>Sectors List.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stock Count Sheet.resx">
+      <DependentUpon>Stock Count Sheet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stock Issue Register.resx">
+      <DependentUpon>Stock Issue Register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stock Return Register.resx">
+      <DependentUpon>Stock Return Register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Towns List.resx">
+      <DependentUpon>Towns List.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\form.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

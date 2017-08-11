@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{389AFC19-4E00-43AE-9F5E-30FEF94C72A5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Objects</RootNamespace>
+    <AssemblyName>Objects</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BankCheques.cs" />
+    <Compile Include="BankDeposit.cs" />
+    <Compile Include="BankVouchers.cs" />
+    <Compile Include="CashCollection.cs" />
+    <Compile Include="CashCollectionBody.cs" />
+    <Compile Include="ChartOfAccounts.cs" />
+    <Compile Include="Companies.cs" />
+    <Compile Include="CompanyDiscounts.cs" />
+    <Compile Include="CompanyGroups.cs" />
+    <Compile Include="CompanySpecialDisc.cs" />
+    <Compile Include="CompanySpecialDiscBody.cs" />
+    <Compile Include="CreditVouchers.cs" />
+    <Compile Include="DebitVouchers.cs" />
+    <Compile Include="DefineFormula.cs" />
+    <Compile Include="DefineFormulaBody.cs" />
+    <Compile Include="Exceed.cs" />
+    <Compile Include="ExceedBody.cs" />
+    <Compile Include="JournalVouchers.cs" />
+    <Compile Include="OfferBody.cs" />
+    <Compile Include="OfferHeader.cs" />
+    <Compile Include="Offices.cs" />
+    <Compile Include="OfficeSectors.cs" />
+    <Compile Include="OpeningStock.cs" />
+    <Compile Include="Packings.cs" />
+    <Compile Include="Parties.cs" />
+    <Compile Include="PartyGroups.cs" />
+    <Compile Include="ProductBarcodes.cs" />
+    <Compile Include="Productions.cs" />
+    <Compile Include="ProductionsBody.cs" />
+    <Compile Include="Products.cs" />
+    <Compile Include="Promises.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Purchase.cs" />
+    <Compile Include="PurchasesBody.cs" />
+    <Compile Include="PurOrder .cs" />
+    <Compile Include="PurOrderBody.cs" />
+    <Compile Include="PurReturns.cs" />
+    <Compile Include="PurReturnsBody.cs" />
+    <Compile Include="Recovery.cs" />
+    <Compile Include="RecoveryBody.cs" />
+    <Compile Include="SaleOrder.cs" />
+    <Compile Include="SaleOrderBody.cs" />
+    <Compile Include="SaleReturns.cs" />
+    <Compile Include="SaleReturnsBody.cs" />
+    <Compile Include="Sales.cs" />
+    <Compile Include="SalesBody.cs" />
+    <Compile Include="SaleSizes.cs" />
+    <Compile Include="SalesmanSectors.cs" />
+    <Compile Include="Salesmen.cs" />
+    <Compile Include="Sectors.cs" />
+    <Compile Include="StockIssue.cs" />
+    <Compile Include="StockIssueBody.cs" />
+    <Compile Include="StockReturn.cs" />
+    <Compile Include="StockReturnBody.cs" />
+    <Compile Include="Towns.cs" />
+    <Compile Include="Transport.cs" />
+    <Compile Include="Wastage.cs" />
+    <Compile Include="WastageBody.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

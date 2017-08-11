@@ -1,0 +1,280 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DE81CE5C-2FB1-442F-89F5-ED6EDDE47B39}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Defination</RootNamespace>
+    <AssemblyName>Defination</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DefCompanies.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DefCompanies.Designer.cs">
+      <DependentUpon>DefCompanies.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DefCompanyDiscounts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DefCompanyDiscounts.Designer.cs">
+      <DependentUpon>DefCompanyDiscounts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DefGroups.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DefGroups.designer.cs">
+      <DependentUpon>DefGroups.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DefPackings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DefPackings.Designer.cs">
+      <DependentUpon>DefPackings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DefParties.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DefParties.designer.cs">
+      <DependentUpon>DefParties.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDefineFormula.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDefineFormula.designer.cs">
+      <DependentUpon>FrmDefineFormula.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DefOffices.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DefOffices.Designer.cs">
+      <DependentUpon>DefOffices.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DefProducts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DefProducts.Designer.cs">
+      <DependentUpon>DefProducts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DefSalesmanSectors.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DefSalesmanSectors.Designer.cs">
+      <DependentUpon>DefSalesmanSectors.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DefTowns.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DefTowns.Designer.cs">
+      <DependentUpon>DefTowns.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DefOfficeSectors.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DefOfficeSectors.designer.cs">
+      <DependentUpon>DefOfficeSectors.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTradeOffers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTradeOffers.Designer.cs">
+      <DependentUpon>FrmTradeOffers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OpeningStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OpeningStock.Designer.cs">
+      <DependentUpon>OpeningStock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DefProduct Barcode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DefProduct Barcode.Designer.cs">
+      <DependentUpon>DefProduct Barcode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DefPartyGroups.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DefPartyGroups.Designer.cs">
+      <DependentUpon>DefPartyGroups.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="frmPromises.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPromises.designer.cs">
+      <DependentUpon>frmPromises.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="DefSectors.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DefSectors.designer.cs">
+      <DependentUpon>DefSectors.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DefTransport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DefTransport.Designer.cs">
+      <DependentUpon>DefTransport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DefVendors.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DefVendors.Designer.cs">
+      <DependentUpon>DefVendors.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DefSalesmen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DefSalesmen.Designer.cs">
+      <DependentUpon>DefSalesmen.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="DefCompanies.resx">
+      <DependentUpon>DefCompanies.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DefCompanyDiscounts.resx">
+      <DependentUpon>DefCompanyDiscounts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DefGroups.resx">
+      <DependentUpon>DefGroups.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DefPackings.resx">
+      <DependentUpon>DefPackings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DefParties.resx">
+      <DependentUpon>DefParties.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDefineFormula.resx">
+      <DependentUpon>FrmDefineFormula.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DefOffices.resx">
+      <DependentUpon>DefOffices.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DefProducts.resx">
+      <DependentUpon>DefProducts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DefSalesmanSectors.resx">
+      <DependentUpon>DefSalesmanSectors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DefTowns.resx">
+      <DependentUpon>DefTowns.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DefOfficeSectors.resx">
+      <DependentUpon>DefOfficeSectors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTradeOffers.resx">
+      <DependentUpon>FrmTradeOffers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OpeningStock.resx">
+      <DependentUpon>OpeningStock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DefProduct Barcode.resx">
+      <DependentUpon>DefProduct Barcode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DefPartyGroups.resx">
+      <DependentUpon>DefPartyGroups.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPromises.resx">
+      <DependentUpon>frmPromises.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="DefSectors.resx">
+      <DependentUpon>DefSectors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DefTransport.resx">
+      <DependentUpon>DefTransport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DefVendors.resx">
+      <DependentUpon>DefVendors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DefSalesmen.resx">
+      <DependentUpon>DefSalesmen.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{eeb9c01d-d7fb-4239-ab0a-745b6dc7947c}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Objects\Objects.csproj">
+      <Project>{389afc19-4e00-43ae-9f5e-30fef94c72a5}</Project>
+      <Name>Objects</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Search\Search.csproj">
+      <Project>{2bcf6fa2-c044-499b-8336-eab26773465e}</Project>
+      <Name>Search</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
